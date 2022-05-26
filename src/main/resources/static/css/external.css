@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+color: rgba(0,0,0,0.7);
+font-family: 'Noto Sans KR', sans-serif;
+border-radius:0 !important;
+}
+
+.container{
+	padding-bottom:50px;
+}
+
+.card.m-2{
+	border:0;
+}
+
+.card-body, .card-header{
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	display:flex;
+	align-items:center;
+}
+
+#reply-list-box{
+	margin-bottom:150px;
+}
+
+#card-title{
+	border-bottom:1px solid #777;
+	padding: 50px 20px 0 20px ;
+}
+
+.card-title,.card-content,.card-content a {
+	display:flex;
+	color:rgba(0,0,0,0.7);
+}
+
+/* FAQ리스트 */
+.content-item0:nth-child(1){flex-basis:80px; flex-shrink:0;}
+.content-item0:nth-child(2){flex-basis:100px; flex-shrink:0;}
+.content-item0:nth-child(3){flex-basis:220px; flex-shrink:0;}
+.content-item0:nth-child(4){flex-basis:100px; flex-shrink:0;}
+.content-item0:nth-child(5){flex-basis:100px; flex-shrink:0;}
+
+/* QNA(1:1)리스트 */
+.qna_content-item:nth-child(1){flex-basis:70px; flex-shrink:0;}
+.qna_content-item:nth-child(2){flex-basis:80px; flex-shrink:0;}
+.qna_content-item:nth-child(3){flex-basis:230px; flex-shrink:0;}
+.qna_content-item:nth-child(4){flex-basis:100px; flex-shrink:0;}
+.qna_content-item:nth-child(5){flex-basis:100px; flex-shrink:0;}
+.qna_content-item:nth-child(6){flex-basis:110px; flex-shrink:0;}
+
+/* 공지 리스트 */
+.notice_content-item:nth-child(1){flex-basis:100px; flex-shrink:0;}
+.notice_content-item:nth-child(2){flex-basis:680px; flex-shrink:0;}
+.notice_content-item:nth-child(3){flex-basis:100px; flex-shrink:0;}
+.notice_content-item:nth-child(4){flex-basis:100px; flex-shrink:0;}
+.notice_content-item:nth-child(5){flex-basis:100px; flex-shrink:0;}
+
+.bg-dark{
+	background-color:  rgba(255,255,255,.5) !important;
+}
+
+.navbar-dark .navbar-brand{ 
+	color: #000;
+	font-weight: bold;
+	font-size:30px;
+	}
+
+.navbar-dark .navbar-brand:hover{ 
+	color: #000;
+	}
+	
+.navbar-dark .navbar-nav .nav-link{
+	color: #777 !important;
+}
+
+.navbar-nav{
+	margin:auto;
+	padding:auto;
+	box-sizing: border-size;
+	margin-right:0;		
+}
+
+.navbar, .navbar-expand-sm, .bg-dark, .navbar-dark{
+	border-bottom: 1px solid black;
+	padding: 20px;
+	}
+	
+.btn-primary {
+	background-color: rgba(0,0,0,.125);
+	border:0;
+	border-radius:0;
+}
+
+.btn-primary:hover,.btn-primary:active, .btn-primary:focus{
+	background-color:black !important;
+	border:none !important;
+	box-shadow:none !important;
+}
+
+.form-control{
+	border-radius:0;
+}
+
+input::placeholder {
+  color: rgba(0,0,0,.2) !important;
+}
+
+textarea::placeholder {
+  color: rgba(0,0,0,.2) !important;
+}
+
+.board-content{
+	border: 1px solid rgba(0,0,0,.125);
+	padding:20px
+}
+
+.content-detail{
+	padding:0 0 10px 20px;
+}
+
+#reply-content{
+	width:94%;
+	display:inline-block;
+}
+
+#btn-reply-save{
+	margin-left:10px;
+}
+
+.form-control:hover, .form-control:active, .form-control:focus, .form-control:visited{
+	box-shadow:none !important;
+	outline:none !important;
+	border: 1px solid black;
+}
+
+.page-link {
+	border-radius:0 !important;
+	color:black;
+}
+
+.page-link:active, .page-link:focus, .page-link:hover{
+	box-shadow:none !important;
+	outline:none !important;
+	border: 1px solid black;
+	color:white;
+	background-color:black;
+}
+
+.justify-content-center{
+	padding:30px 0;	
+}
+
+.badge{
+	background-color: rgba(0,0,0,.125);
+	color:white;
+	border:0;
+	font-size:16px;
+	padding: 6px 12px;
+	font-weight:normal;
+}
+
+.btn-secondary, .btn-danger, .btn-warning{
+	float: right;
+	border: 1px solid #dee2e6 !important;
+	background-color: white;
+	color: #777;
+}
+
+.btn-secondary:hover, .btn-danger:hover, .btn-warning:hover,
+.btn-secondary:active, .btn-danger:active, .btn-warning:active,
+.btn-secondary:focus, .btn-danger:focus, .btn-warning:focus,
+.badge:hover, .badge:active, badge:focus {
+	background-color: black !important;
+	color: white !important;
+	box-shadow:none !important;
+	outline:none !important;
+}
+
+
+.search{
+    border: 1px solid #000;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    cursor:pointer;
+}
+
+
+.search input{
+    border: 0;
+    
+}
+
+.search input:focus {
+    outline: none;
+}
+.search img {
+    height: 90%;
+}
+
+

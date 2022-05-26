@@ -1,0 +1,54 @@
+
+html, body {
+	margin: auto;
+	height: 100%;
+	text-align: center;
+}
+
+.section {
+	width: 100%;
+	margin-top: 4%;
+}
+
+#div1 {
+	margin: 30px 0px 30px;
+}
+
+#div1 input {
+	border: 1px solid lightgray;
+}
+
+form>div>input {
+	margin-right: 100px;
+	margin-left: 10px;
+}
+
+button {
+	display: block;
+	margin: 30px auto;
+	padding: 10px 20px;
+	background-color: black;
+	color: white;
+}
+
+article {
+	padding: 20px;
+}
+
+#container {
+	width: 800px;
+	margin: 30px auto;
+	text-align: left;
+}
+
+h3 {
+	text-align: start;
+}
+
+.id_pw_hr {
+	border: 1px solid lightgray;
+}
+
+.article {
+	padding: 30px 0px;
+}
