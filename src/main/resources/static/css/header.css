@@ -1,0 +1,97 @@
+header {
+	width: 70%;
+	box-sizing: border-box;
+	padding: 0;
+	margin: auto;
+}
+
+
+a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.header {
+	height: 10%;
+	display: flex;
+	justify-content: flex-end;
+	margin: auto;
+}
+
+#logo{
+	/*로고*/
+	margin-right: auto;
+	color: black;
+}
+
+.headermenu {
+	list-style: none;
+	display: flex;
+	vertical-align : top;
+}
+
+.headermenu li {
+	text-align: center;
+	font-size: small;
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.headermenu li a {
+	transition: all 0.3s ease 0s;
+	
+}
+
+.headermenu>li:hover {
+	cursor: pointer;
+}
+
+#search {
+	border: 1px solid lightgray;
+	width: 150px;
+	height: 20px;
+	margin-left: 10px;
+	vertical-align: middle;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#search_btn {
+	border: none;
+	background-color: white;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+#search_txt {
+	border: 0;
+	width: 1px;
+	padding: 0px;
+}
+
+#search_txt:focus {
+	outline: none;
+}
+
+.menubar {
+	list-style: none;
+	display: flex;
+	border: 0;
+	padding:0;
+}
+
+.menubar>li {
+	width: 100px;
+	text-align: left;
+}
+
+.menubar>li:hover {
+	cursor: pointer;
+}
+
+#header_hr {
+	width: 100%;
+	border: 1px lightgray solid;
+}

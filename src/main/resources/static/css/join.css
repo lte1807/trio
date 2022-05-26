@@ -1,0 +1,66 @@
+html, body {
+	margin: auto;
+	padding: auto;
+	height: 100%;
+	text-align: center;
+}
+
+/*--------섹션---------*/
+.section {
+	width: 100%;
+	margin-top: 4%;
+}
+
+#container {
+	width: 70%;
+	margin: 70px auto;
+}
+
+.div {
+	border-top: 1px solid lightgray;
+	padding: 30px;
+	text-align: left;
+	width: 100%;
+	display: flex;
+}
+
+.div:nth-last-child(1) {
+	border-bottom: 1px solid lightgray;
+}
+
+.text {
+	width: 15%;
+	color: gray;
+}
+
+.input {
+	width: 85%;
+}
+
+input {
+	width: 200px;
+	height: 25px;
+	border: 1px solid lightgrey;
+}
+
+select {
+	width: 70px;
+	height: 30px;
+	border: 1px solid lightgrey;
+}
+
+.input_tel {
+	width: 70px;
+}
+
+#add_info {
+	margin: 100px 0px;
+}
+
+button {
+	background-color: black;
+	color: white;
+	padding: 15px 30px;
+	border: 1px solid black;
+	cursor: pointer;
+}

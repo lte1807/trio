@@ -1,0 +1,158 @@
+html, body {
+	margin: auto;
+	padding: auto;
+	height: 100%;
+	text-align: center;
+}
+
+section {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.menu {
+	margin: 3% 20% 1% 20%;
+	width: 60%;
+	border-spacing: 0;
+	table-layout: fixed;
+	word-break: break-all;
+}
+
+.menu th, td {
+	padding: 20px;
+}
+
+.menu th:hover {
+	border: 1px solid black;
+}
+
+th:hover {
+	cursor: pointer;
+	color: black;
+}
+
+a:hover {
+	color: black;
+}
+
+.summary {
+	cursor: pointer;
+}
+
+.div_a {
+	padding: 10px;
+	margin: 0 10px 15px 10px;
+	line-height: normal;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flex02 {
+	flex: 1;
+}
+
+.flex03 {
+	text-align: left;
+	line-height: 40px;
+	flex: 10;
+}
+
+.flex04 {
+	flex: 1;
+}
+
+.flex05 {
+	align-self: center;
+	width: 10%;
+	flex: 3;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+details>summary {
+	list-style: none;
+}
+
+.table {
+	width: 75%;
+	padding-bottom: 10%;
+	font-size: small;
+	border: 1px solid black;
+}
+
+.table_write {
+	padding: 30px 0 50px 0;
+	margin: auto;
+}
+
+.table td, th {
+	border: 0;
+	text-align: center;
+}
+
+.table_write th {
+	text-align: left;
+}
+
+.table_write td {
+	padding: 10px 50px;
+}
+
+input[type=text] {
+	width: 100%;
+	border: solid 1px lightgray;
+	padding: 3px;
+}
+
+input:hover {
+	cursor: pointer;
+}
+
+input:focus {
+	outline: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+select:focus {
+	outline: none;
+}
+
+.faq_menubar {
+	list-style: none;
+	display: flex;
+	padding-left: 20%;
+	margin-left: -48px;
+	font-size: small;
+}
+
+.faq_menubar>li {
+	width: 120px;
+	text-align: center;
+}
+
+hr {
+	width: 66%;
+	border: 1px lightgray solid;
+}
+
+.unselected {
+	border: 1px solid lightgray;
+	color: lightgray;
+	cursor: pointer;
+}
+
+.selected {
+	border: 1px solid black;
+	color: black;
+	cursor: pointer;
+}

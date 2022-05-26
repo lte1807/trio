@@ -1,0 +1,40 @@
+html, body {
+	margin: auto;
+	height: 100%;
+	text-align: center;
+}
+
+.section {
+	width: 100%;
+	margin-top: 4%;
+}
+
+#findID input , #findPW input{
+	border: 1px solid lightgray;
+}
+
+.find {
+	display: block;
+	margin: 30px auto;
+	padding: 10px 20px;
+	background-color: black;
+	color: white;
+}
+
+#container {
+	width: 800px;
+	margin: auto;
+	text-align: left;
+}
+
+h3 {
+	text-align: start;
+}
+
+.id_pw_hr {
+	border: 1px solid lightgray;
+}
+
+.article {
+	padding-bottom: 20px;
+}
