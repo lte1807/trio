@@ -104,6 +104,6 @@ let index = {
 		}).fail(function(error) {
 			alert(JSON.stringify(error));
 		});
-	},
+	}
 }
 index.init();

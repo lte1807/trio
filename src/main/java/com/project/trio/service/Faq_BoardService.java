@@ -37,8 +37,8 @@ public class Faq_BoardService {
 	}
 
 	@Transactional
-	public void 글삭제하기(int id) {
-		faq_boardRepository.deleteById(id);
+	public void 글삭제하기(int boardId) {
+		faq_boardRepository.deleteById(boardId);
 	}
 
 	@Transactional
@@ -50,5 +50,4 @@ public class Faq_BoardService {
 		faq_board.setContent(requestBoard.getContent());
 		faq_board.setFaq_category(requestBoard.getFaq_category());
 	}
-	
 }

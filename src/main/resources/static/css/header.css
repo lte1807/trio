@@ -61,7 +61,7 @@ a:link, a:visited {
 	background-color: white;
 	width: 10px;
 	height: 10px;
-	margin-right: 10px;
+	margin: -5px 15px 10px 0;
 	cursor: pointer;
 }
 

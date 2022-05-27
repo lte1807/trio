@@ -17,7 +17,8 @@ let index = {
 	save: function() {
 		let data = {
 			title: $("#title").val(),
-			content: $("#content").val()
+			content: $("#content").val(),
+			notice_category: $("#notice_category").val()
 		};
 		$.ajax({
 			type: "POST",
@@ -53,7 +54,8 @@ let index = {
 
 		let data = {
 			title: $("#title").val(),
-			content: $("#content").val()
+			content: $("#content").val(),
+			notice_category: $("#notice_category").val()
 		};
 		$.ajax({
 			type: "PUT",

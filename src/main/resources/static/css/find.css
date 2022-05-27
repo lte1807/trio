@@ -1,3 +1,4 @@
+
 html, body {
 	margin: auto;
 	height: 100%;
@@ -9,11 +10,20 @@ html, body {
 	margin-top: 4%;
 }
 
-#findID input , #findPW input{
+#div1 {
+	margin: 30px 0px 30px;
+}
+
+#div1 input {
 	border: 1px solid lightgray;
 }
 
-.find {
+form>div>input {
+	margin-right: 100px;
+	margin-left: 10px;
+}
+
+button {
 	display: block;
 	margin: 30px auto;
 	padding: 10px 20px;
@@ -21,9 +31,13 @@ html, body {
 	color: white;
 }
 
+article {
+	padding: 20px;
+}
+
 #container {
 	width: 800px;
-	margin: auto;
+	margin: 30px auto;
 	text-align: left;
 }
 
@@ -36,5 +50,5 @@ h3 {
 }
 
 .article {
-	padding-bottom: 20px;
+	padding: 30px 0px;
 }

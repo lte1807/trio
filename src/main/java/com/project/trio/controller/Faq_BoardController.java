@@ -37,6 +37,64 @@ public class Faq_BoardController {
 		model.addAttribute("faq_board", faq_boardService.글상세보기(id));
 		return "faq_board/updateForm";
 	}
+
+	
+	@GetMapping({ "/faq_board/category_1" })
+	public String faq_board_category1(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_1";
+	}
+	
+	@GetMapping({ "/auth/faq_board/category_1" })
+	public String faq_board_category1_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_1";
+	}
+
+	@GetMapping({ "/faq_board/category_2" })
+	public String faq_board_category2(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_2";
+	}
+	
+	@GetMapping({ "/auth/faq_board/category_2" })
+	public String faq_board_category2_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_2";
+	}
+	
+	@GetMapping({ "/faq_board/category_3" })
+	public String faq_board_category3(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_3";
+	}
+	
+	@GetMapping({ "/auth/faq_board/category_3" })
+	public String faq_board_category3_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_3";
+	}
+	
+	@GetMapping({ "/faq_board/category_4" })
+	public String faq_board_category4(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_4";
+	}
+	
+	@GetMapping({ "/auth/faq_board/category_4" })
+	public String faq_board_category4_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("faq_boards", faq_boardService.글목록(pageable));
+		return "faq_board/category_4";
+	}
+
 	/*
 	 * @GetMapping("/faq_board/{id}") public String findById(@PathVariable int id,
 	 * Model model) { model.addAttribute("faq_board", faq_boardService.글상세보기(id));
@@ -44,10 +102,13 @@ public class Faq_BoardController {
 	 * "faq_board/detail"; }
 	 */
 
+
 	@GetMapping({ "/faq_board/form" })
 	public String saveForm() {
 		return "faq_board/saveForm";
 	}
+
+
 
 	/*
 	 * @GetMapping("/auth/faq_board/{id}") public String
@@ -57,5 +118,6 @@ public class Faq_BoardController {
 	 * "faq_board/detail"; }
 	 */
 	
+
 
 }

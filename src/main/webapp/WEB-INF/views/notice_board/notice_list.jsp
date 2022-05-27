@@ -3,14 +3,15 @@
 <%@ include file="../layout/header.jsp"%>
 <div class="container">
 	<div class="card m-2">
+	<h1>공지사항</h1>
 	<table>
-	<caption><h1>공지사항</h1></caption>
 			<tr><th><div class="card-body" id="card-title">
 						<div class="card-title">
 							<h5 class="notice_content-item">번호</h5>
 							<h5 class="notice_content-item">제목</h5>
 							<h5 class="notice_content-item">작성자</h5>
 							<h5 class="notice_content-item">조회수</h5>
+							<h5 class="notice_content-item">작성일</h5>
 						</div>
 					</div></th></tr>
 			<c:forEach var="notice_board" items="${notice_boards.content}">
@@ -18,10 +19,11 @@
 							<div class="card-content">
 								<h6 class="notice_content-item">${notice_board.id}</h6>
 								<h6 class="notice_content-item">
-									<a href="/auth/notice_board/${notice_board.id}">[공지] ${notice_board.title}</a>
+									<a href="/auth/notice_board/${notice_board.id}">[${notice_board.notice_category}] ${notice_board.title}</a>
 								</h6>
 								<h6 class="notice_content-item">${notice_board.normalmemberinfo.nname}</h6>
 								<h6 class="notice_content-item">${notice_board.count}</h6>
+								<h6 class="notice_content-item"><fmt:formatDate pattern = "yyyy-MM-dd" value="${notice_board.createDate}"/></h6>
 							</div>
 						</div></td></tr>
 			</c:forEach>

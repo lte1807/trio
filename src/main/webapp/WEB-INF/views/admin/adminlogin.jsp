@@ -3,6 +3,7 @@
 <%@ include file="../layout/header.jsp"%>
 <link href="/css/login.css" rel="stylesheet">
 
+<!--section-->
 <section class="section">
 	<div id="container">
 		<h2>

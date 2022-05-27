@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.project.trio.config.auth.PrincipalDetail;
-	
+
 @Controller
 public class UserController {
 
@@ -30,6 +30,7 @@ public class UserController {
 	public String loginForm() {
 		return "user/loginForm";
 	}
+	
 
 	@GetMapping("/auth/findIdPw")
 	public String findIdPw() {
@@ -45,6 +46,7 @@ public class UserController {
 	public String Userupdate() {
 		return "user/Userupdate";
 	}
+	
 
 	@GetMapping("/user/Socialupdate")
 	public String Socialupdate() {
@@ -65,11 +67,13 @@ public class UserController {
 	public String QNA() {
 		return "user/QNA";
 	}
+	
 
 	@GetMapping("/user/QNA_write")
 	public String QNA_write() {
 		return "user/QNA_write";
 	}
+	
 
 	@GetMapping("/user/FAQ")
 	public String FAQ() {

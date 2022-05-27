@@ -53,5 +53,7 @@ public class Notice_boards {
 	
 	@CreationTimestamp
 	private Timestamp createDate;
+	
+	private String notice_category;
 }
 

@@ -11,9 +11,10 @@
 	<div>
 		<br /> <br />
 		<div class="content-detail">
-			<b>글 번호</b> <span id="id">${qna_board.id}</span> &nbsp;&nbsp; <b>작성자</b>
-			<span>${qna_board.normalmemberinfo.nname}</span> &nbsp;&nbsp; <b>조회수</b>
-			<span>${qna_board.count}</span>
+			<b>글 번호</b><span id="id">${qna_board.id}</span> &nbsp;&nbsp; 
+			<b>작성자</b><span>${qna_board.normalmemberinfo.nname}</span> &nbsp;&nbsp; 
+			<b>작성일</b> <span><fmt:formatDate pattern = "yyyy-MM-dd hh:mm:ss" value="${qna_board.createDate}"/></span> &nbsp;&nbsp; 
+			<b>조회수</b><span>${qna_board.count}</span>
 		</div>
 		<div class="board-content">
 			<h3>${qna_board.title}</h3>
@@ -46,19 +47,17 @@
 			<div class="card-header">답변</div>
 			<ul id="reply-box" class="list-group">
 				<c:forEach var="reply" items="${qna_board.replys}">
-
 					<li id="reply-${reply.id}"
 						class="list-group-item d-flex justify-content-between">
 						<div>
-							<b>${reply.normalmemberinfo.nname} </b> &nbsp;&nbsp;
-							${reply.content}
-						</div> <c:if
-							test="${reply.normalmemberinfo.nname==principal.normalmemberinfo.nname}">
-							<button onClick="index.replyDelete(${qna_board.id},${reply.id })"
-								class="badge">삭제</button>
+							<b>${reply.normalmemberinfo.nname} </b> &nbsp;&nbsp;${reply.content}
+						</div> 
+						<c:if test="${reply.normalmemberinfo.nname==principal.normalmemberinfo.nname}">
+							<button onClick="index.replyDelete(${qna_board.id},${reply.id })" class="badge">삭제</button>
 						</c:if>
 					</li>
 				</c:forEach>
+				
 			</ul>
 		</div>
 		</c:if>

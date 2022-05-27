@@ -30,6 +30,9 @@ public class UserService {
 	@Transactional
 	public void 회원수정(NormalMemberInfo normalmemberinfo) {
 		NormalMemberInfo persistance = userRepository.findByNid(normalmemberinfo.getNid());
+//			.orElseThrow(() -> {
+//			return new IllegalArgumentException("회원 찾기 실패");
+//		});
 
 		String rawPassword = normalmemberinfo.getNpw();
 		String encPassword = encoder.encode(rawPassword);
@@ -52,5 +55,4 @@ public class UserService {
 			return false;
 		}
 	}
-
 }

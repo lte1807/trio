@@ -8,7 +8,7 @@ server:
       force: true
 spring:
   datasource:
-    url: jdbc:oracle:thin:@oracle.interstander.com:41521:XE
+    url: jdbc:oracle:thin:@oracle.interstander.com:51521:XE
     username: trio
     password: 1234
     driver-class-name: oracle.jdbc.OracleDriver

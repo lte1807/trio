@@ -1,5 +1,9 @@
 package com.project.trio.controller;
 
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,17 +19,23 @@ import com.project.trio.model.AdminMemberInfo;
 import com.project.trio.model.NormalMemberInfo;
 import com.project.trio.service.AdminPageService;
 
+
 @Controller
 public class AdminController {
 	
+
+
 	@Autowired
 	AdminPageService adminPageService;
 	
+
 	@GetMapping("/auth/adminlogin")
 	public String adminlogin() {
 		return "admin/adminlogin";
 	}
 	
+
+
 	@GetMapping("/admin/adminPage")
 	public String adminPage() {
 		return "admin/adminPage";

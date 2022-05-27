@@ -53,6 +53,76 @@ public class Qna_BoardController {
 		return "qna_board/detail";
 	}
 	
+	@GetMapping({ "/qna_board/category_1" })
+	public String qna_board_category1(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_1";
+	}
+	
+	@GetMapping({ "/auth/qna_board/category_1" })
+	public String qna_board_category1_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_1";
+	}
+
+	@GetMapping({ "/qna_board/category_2" })
+	public String qna_board_category2(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_2";
+	}
+	
+	@GetMapping({ "/auth/qna_board/category_2" })
+	public String qna_board_category2_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_2";
+	}
+	
+	@GetMapping({ "/qna_board/category_3" })
+	public String qna_board_category3(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_3";
+	}
+	
+	@GetMapping({ "/auth/qna_board/category_3" })
+	public String qna_board_category3_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_3";
+	}
+	
+	@GetMapping({ "/qna_board/category_4" })
+	public String qna_board_category4(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_4";
+	}
+	
+	@GetMapping({ "/auth/qna_board/category_4" })
+	public String qna_board_category4_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_4";
+	}
+	
+	@GetMapping({ "/qna_board/category_5" })
+	public String qna_board_category5(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_5";
+	}
+	
+	@GetMapping({ "/auth/qna_board/category_5" })
+	public String qna_board_category5_readonly(Model model,
+			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
+		model.addAttribute("qna_boards", qna_boardService.글목록(pageable));
+		return "qna_board/category_5";
+	}
+	
 	@GetMapping({"/qna_board/form"})
 	public String saveForm() {
 	return "qna_board/saveForm";	

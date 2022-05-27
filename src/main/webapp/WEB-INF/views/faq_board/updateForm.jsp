@@ -1,7 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp"%>
+    <script type="text/javascript" src="/js/summernote-ko-KR.js"></script>
+    <script type="text/javascript" src="/js/summernote-lite.js"></script>
+    <link rel="stylesheet" href="/css/summernote-lite.css">
 <div class="container">
+
 	<form>
 		<label for="faq_category">분류</label> <select name="faq_category"
 			id="faq_category" onchange="faq_category()">
@@ -10,7 +14,9 @@
 			<option value="2">배송</option>
 			<option value="3">교환/반품/취소</option>
 			<option value="4">입금/기타</option>
-		</select> <input type="hidden" id="id" value="${faq_board.id}" />
+		</select> 
+		
+		<input type="hidden" id="id" value="${faq_board.id}" />
 		<div class="form-group">
 			<input value="${faq_board.title}" type="text" class="form-control"
 				placeholder="Enter title" id="title">
@@ -19,14 +25,14 @@
 			<textarea class="form-control summernote" rows="5" id="content">${faq_board.content}</textarea>
 		</div>
 	</form>
-	<button id="btn-update" class="btn btn-primary">수정</button>
+	<button id="btn-update" class="btn btn-primary">등록</button>
 </div>
 <br />
-<script>
-	$('.summernote').summernote({
-		tabsize : 2,
-		height : 300
-	});
-</script>
+      <script>
+      $('.summernote').summernote({
+    	  lang : 'ko-KR',
+    	  height: 300 
+    	  });  
+ 	     </script>
 <script type="text/javascript" src="/js/faq_board.js"></script>
 <%@ include file="../layout/footer.jsp"%>

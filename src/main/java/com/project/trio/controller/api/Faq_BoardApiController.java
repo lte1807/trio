@@ -27,11 +27,12 @@ public class Faq_BoardApiController {
 		return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
 	}
 
-	@DeleteMapping("/api/faq_board/{id}")
-	public ResponseDto<Integer> deleteById(@PathVariable int id) {
-		faq_boardService.글삭제하기(id);
+	@DeleteMapping("/api/faq_board/{boardId}")
+	public ResponseDto<Integer> boardDelete(@PathVariable int boardId) {
+		faq_boardService.글삭제하기(boardId);
 		return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
 	}
+
 
 	@PutMapping("/api/faq_board/{id}")
 	public ResponseDto<Integer> update(@PathVariable int id, @RequestBody Faq_boards faq_board) {

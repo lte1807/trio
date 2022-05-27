@@ -10,15 +10,17 @@
 	<div>
 		<br /> <br />
 		<div class="content-detail">
-			<b>글 번호</b> <span id="id">${notice_board.id}</span> &nbsp;&nbsp; <b>작성자</b>
-			<span>${notice_board.normalmemberinfo.nname}</span> &nbsp;&nbsp; <b>조회수</b> <span>${notice_board.count}</span>
+			<b>글 번호</b> <span id="id">${notice_board.id}</span> &nbsp;&nbsp; 
+			<b>작성자</b>	<span>${notice_board.normalmemberinfo.nname}</span> &nbsp;&nbsp; 
+			<b>작성일</b> <span><fmt:formatDate pattern = "yyyy-MM-dd hh:mm:ss" value="${notice_board.createDate}"/></span> &nbsp;&nbsp; 
+			<b>조회수</b> <span>${notice_board.count}</span>
+		
 		</div>
 		<div class="board-content">
-			<h3>[공지]${notice_board.title}</h3>
+			<h3>[${notice_board.notice_category}] ${notice_board.title}</h3>
 			<hr />
 			<div>${notice_board.content}</div>
 		</div>
-
 	</div>
 </div>
 <br />
