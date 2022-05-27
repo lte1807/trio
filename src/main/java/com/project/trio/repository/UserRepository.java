@@ -7,4 +7,5 @@ import com.project.trio.model.NormalMemberInfo;
 
 public interface UserRepository extends JpaRepository<NormalMemberInfo,Integer>{
 	NormalMemberInfo findByNid(String nid);
+	NormalMemberInfo findByNnameAndNemail(String nname, String neamil);
 	}

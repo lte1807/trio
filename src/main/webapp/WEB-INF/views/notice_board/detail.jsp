@@ -21,7 +21,6 @@
 			<hr />
 			<div>${notice_board.content}</div>
 		</div>
-
 	</div>
 </div>
 <br />

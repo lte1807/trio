@@ -38,4 +38,5 @@ public class Notice_BoardApiController {
 		notice_boardService.글수정하기(id, notice_board);
 		return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
 	}
+
 }

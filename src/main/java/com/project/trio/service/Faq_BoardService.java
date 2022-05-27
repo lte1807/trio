@@ -50,5 +50,4 @@ public class Faq_BoardService {
 		faq_board.setContent(requestBoard.getContent());
 		faq_board.setFaq_category(requestBoard.getFaq_category());
 	}
-	
 }

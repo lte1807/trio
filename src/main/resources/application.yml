@@ -8,10 +8,17 @@ server:
       force: true
 spring:
   datasource:
-    url: jdbc:oracle:thin:@oracle.interstander.com:41521:XE
+    url: jdbc:oracle:thin:@oracle.interstander.com:51521:XE
     username: trio
     password: 1234
     driver-class-name: oracle.jdbc.OracleDriver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: dong3405@gmail.com
+    password: ak10448801
+    properties:      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true        
 #spring:
 #  datasource:
 #    url: jdbc:oracle:thin:@127.0.0.1:1521:XE

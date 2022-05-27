@@ -26,7 +26,9 @@
 <!-- <script	src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet"> -->
 
-
+<script	src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/external.css">
 <link rel="stylesheet" href="/css/board_list.css">
@@ -75,7 +77,7 @@
 				<ul class="headermenu">
 					<li><a href="/logout">LOGOUT</a></li>
 					<li><a href="/user/mypage">MY PAGE(임시)</a></li>
-					<li><a href="/">회원 관리</a></li>
+					<li><a href="/admin/adminPage">회원 관리</a></li>
 					<li><a href="/">상품 관리</a></li>
 					<li><a href="/">주문관리</a></li>
 					<li><a href="/">고객센터 관리</a></li>

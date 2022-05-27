@@ -10,7 +10,7 @@ import com.project.trio.config.auth.PrincipalDetail;
 @Controller
 public class UserController {
 
-	//Get
+	// Get
 	@GetMapping("/user")
 	public @ResponseBody String user(@AuthenticationPrincipal PrincipalDetail principalDetail) {
 		return "user";
@@ -31,9 +31,15 @@ public class UserController {
 		return "user/loginForm";
 	}
 	
+
 	@GetMapping("/auth/findIdPw")
 	public String findIdPw() {
 		return "user/findIdPw";
+	}
+	
+	@GetMapping("/auth/findPw")
+	String findPw(){
+		return "user/findPw";
 	}
 
 	@GetMapping("/user/Userupdate")
@@ -41,6 +47,7 @@ public class UserController {
 		return "user/Userupdate";
 	}
 	
+
 	@GetMapping("/user/Socialupdate")
 	public String Socialupdate() {
 		return "user/Socialupdate";
@@ -61,11 +68,13 @@ public class UserController {
 		return "user/QNA";
 	}
 	
+
 	@GetMapping("/user/QNA_write")
 	public String QNA_write() {
 		return "user/QNA_write";
 	}
 	
+
 	@GetMapping("/user/FAQ")
 	public String FAQ() {
 		return "user/FAQ";

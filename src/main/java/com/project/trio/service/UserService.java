@@ -33,6 +33,7 @@ public class UserService {
 //			.orElseThrow(() -> {
 //			return new IllegalArgumentException("회원 찾기 실패");
 //		});
+
 		String rawPassword = normalmemberinfo.getNpw();
 		String encPassword = encoder.encode(rawPassword);
 		persistance.setNpw(encPassword);
@@ -45,4 +46,13 @@ public class UserService {
 		persistance.setNpost(normalmemberinfo.getNpost());
 	}
 
+	public boolean userEmailCheck(String Nemail, String Nname) {
+
+		NormalMemberInfo normalmemberinfo = userRepository.findByNid(Nemail);
+		if (normalmemberinfo != null && normalmemberinfo.getNname().equals(Nname)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }

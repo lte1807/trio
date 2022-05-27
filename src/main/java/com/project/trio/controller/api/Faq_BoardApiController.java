@@ -33,6 +33,7 @@ public class Faq_BoardApiController {
 		return new ResponseDto<Integer>(HttpStatus.OK.value(), 1);
 	}
 
+
 	@PutMapping("/api/faq_board/{id}")
 	public ResponseDto<Integer> update(@PathVariable int id, @RequestBody Faq_boards faq_board) {
 		faq_boardService.글수정하기(id, faq_board);

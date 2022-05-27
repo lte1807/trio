@@ -37,11 +37,18 @@ let index = {
 
 
 /*	deleteById: function() {
+=======
+	deleteById: function() {
+>>>>>>> trio/master
 		var id = $("#id").text();
 
 		$.ajax({
 			type: "DELETE",
+<<<<<<< HEAD
 			url: "/api/faq_board/"+id,
+=======
+			url: "/api/faq_board/" + id,
+>>>>>>> trio/master
 			dataType: "json"
 		}).done(function(resp) {
 			alert("삭제가 완료되었습니다.");
@@ -49,6 +56,7 @@ let index = {
 		}).fail(function(error) {
 			alert(JSON.stringify(error));
 		});
+<<<<<<< HEAD
 	},*/
 		boardDelete: function(boardId) {
 		$.ajax({

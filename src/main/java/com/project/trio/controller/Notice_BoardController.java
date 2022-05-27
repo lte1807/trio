@@ -28,7 +28,10 @@ public class Notice_BoardController {
 	public String notice_board_readonly(Model model,
 			@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.DESC) Pageable pageable) {
 		model.addAttribute("notice_boards", notice_boardService.글목록(pageable));
+
 		return "notice_board/notice_list";	
+	
+
 	}
 
 	@GetMapping("/notice_board/{id}/updateForm")

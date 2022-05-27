@@ -36,6 +36,7 @@ border-radius:0 !important;
 }
 
 /* FAQ리스트 */
+/* FAQ, QnA 리스트 */
 .content-item0:nth-child(1){flex-basis:80px; flex-shrink:0;}
 .content-item0:nth-child(2){flex-basis:100px; flex-shrink:0;}
 .content-item0:nth-child(3){flex-basis:220px; flex-shrink:0;}
@@ -56,6 +57,8 @@ border-radius:0 !important;
 .notice_content-item:nth-child(3){flex-basis:100px; flex-shrink:0;}
 .notice_content-item:nth-child(4){flex-basis:100px; flex-shrink:0;}
 .notice_content-item:nth-child(5){flex-basis:100px; flex-shrink:0;}
+
+
 
 .bg-dark{
 	background-color:  rgba(255,255,255,.5) !important;
