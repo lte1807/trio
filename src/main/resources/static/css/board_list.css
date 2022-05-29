@@ -21,7 +21,7 @@
 		.faq_menubar{
             list-style: none;
             display: flex;
-            padding-left: 20%;
+            padding-left: 10%;
             margin-left: -48px ;
             font-size: small;
             text-decoration:none;
@@ -48,12 +48,6 @@
 	           	cursor:pointer;
 		}
 		
-		
-/* 			#categorySelect: {
-	            text-decoration:none;
-	            color: black;
-		} */
-
 
         .menubar > li {
             width: 100px;

@@ -13,7 +13,7 @@
 		<div class="content-detail">
 			<b>글 번호</b><span id="id">${qna_board.id}</span> &nbsp;&nbsp; 
 			<b>작성자</b><span>${qna_board.normalmemberinfo.nname}</span> &nbsp;&nbsp; 
-			<b>작성일</b> <span><fmt:formatDate pattern = "yyyy-MM-dd hh:mm:ss" value="${qna_board.createDate}"/></span> &nbsp;&nbsp; 
+			<b>작성일</b> <span><fmt:formatDate pattern = "yyyy-MM-dd" value="${qna_board.createDate}"/></span> &nbsp;&nbsp; 
 			<b>조회수</b><span>${qna_board.count}</span>
 		</div>
 		<div class="board-content">
@@ -30,13 +30,11 @@
 		</div>
 		<div class="card">
 			<form>
-				<input type="hidden" id="userId"
-					value="${principal.normalmemberinfo.id}" /> <input type="hidden"
-					id="boardId" value="${qna_board.id}" />
+				<input type="hidden" id="userId" value="${principal.normalmemberinfo.id}" /> 
+				<input type="hidden" id="boardId" value="${qna_board.id}" />
 				<c:if test="${qna_board.normalmemberinfo.nid==principal.normalmemberinfo.nid}">
 					<div class="card-body">
-						<textarea id="reply-content" class="form-control" rows="1"
-							placeholder="답변 쓰기"></textarea>
+						<textarea id="reply-content" class="form-control" rows="1"	placeholder="답변 쓰기"></textarea>
 						<button type="button" id="btn-reply-save" class="btn btn-primary">등록</button>
 					</div>
 			</form>

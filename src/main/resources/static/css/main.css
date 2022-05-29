@@ -19,6 +19,10 @@ html, body {
 	word-break: break-all;
 }
 
+pre{
+	width:1280px;
+}
+
 .menu th, td {
 	padding: 20px;
 }
@@ -170,20 +174,25 @@ caption {
 }
 
 .swiper-button-next{
-    background-image: url(./img/right_btn.png);
+    background-image: url(/img/right_btn.png) !important;
     opacity: 0.4;
     background-size: 20px 30px;
+    width:100%;
 }
+
 
 .swiper-button-prev{
-    background-image: url(./img/left_btn.png);
+    background-image: url(/img/left_btn.png)!important;
     opacity: 0.4;
     background-size: 20px 30px;
 }
-
+.swiper-pagination-bullet{
+border-radius: 50% !important;
+}
 .swiper-pagination-bullet-active{
-    background: #000;
-    opacity: 50%;
+    background: #000 !important;
+    opacity: 50% !important;
+    border-radius: 50% !important;
 }
 
 /* 베스트 아이템 */

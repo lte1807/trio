@@ -10,7 +10,7 @@
 		<table class="all product-table">			
 					
 			<c:forEach var="product" items="${product.content}">
-			<tr><td class="thumbnail"><a href="/product/${product.id}"}>${product.thumbnail}</a><td>
+			<tr><td class="thumbnail"><a href="/auth/product/${product.id}"}>${product.thumbnail}</a><td>
 				<td class="thumbnail_price">
 				<p class="thumbnail_title">${product.title}</p><br>				
 				<p class="thumbnail_originalPrice">${product.price}</p>
@@ -18,8 +18,7 @@
 				<p class="thumbnail_review">리뷰 ${product.reviewCount}개</p>
 				</td></tr>
 			</c:forEach>
-			
-			
+						
 				</table>
 				<div>
 		<c:if test="${not empty principal}">

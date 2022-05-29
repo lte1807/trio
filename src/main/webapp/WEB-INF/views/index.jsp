@@ -41,7 +41,7 @@
 			<tr>
 				<td><img src="/img/new1.jpg" alt="신제품1"></td>
 				<td><img src="/img/new2.jpg" alt="신제품2"></td>
-				<td><a href="/auth/product/detail"><img src="/img/new3.jpg" alt="신제품3"></a></td>
+				<td><img src="/img/new3.jpg" alt="신제품3"></td>
 				<td><img src="/img/new4.jpg" alt="신제품4"></td>
 				<td><img src="/img/new5.jpg" alt="신제품5"></td>
 				<td><img src="/img/new6.jpg" alt="신제품6"></td>
@@ -53,7 +53,7 @@
 				<td id="price">[선택]상품명<br>10,000원<br>
 					<p id="review_txt">리뷰 : 0</p>
 				</td>
-				<td id="price"><a href="/auth/product/detail">[선택]test상품<br>10,000원<br></a>
+				<td id="price">[선택]상품명<br>10,000원<br>
 					<p id="review_txt">리뷰 : 0</p>
 				</td>
 				<td id="price">[선택]상품명<br>10,000원<br>

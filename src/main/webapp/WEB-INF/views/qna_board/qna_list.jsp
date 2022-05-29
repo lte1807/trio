@@ -23,10 +23,11 @@
 <div class="container">
 	<div class="card m-2">
 		<div class="flex02">
-		<h2>고객문의</h2>
 			<table class="menu">
+			<caption><h2>고객문의</h2></caption>
 				<tr>
-					<th class="unselected"><a href="/auth/faq_board"
+					<th class="unselected" style="border-right:solid 1px black;">
+					<a href="/auth/faq_board"
 						style="color: lightgray;">FAQ</a></th>
 					<th class="selected"><a>1:1문의</a></th>
 				</tr>
@@ -45,7 +46,7 @@
 		<div class="flex03">
 			<div class="div_text" id="container">
 			<tr>
-				<th><div class="card-body" id="card-title">
+				<th><div class="card-body" id="card-title" style="width:650px;">
 						<div class="card-title">
 							<h5 class="qna_content-item">번호</h5>
 							<h5 class="qna_content-item">분류</h5>
@@ -58,7 +59,7 @@
 			</tr>
 			<c:forEach var="qna_board" items="${qna_boards.content}">
 				<tr>
-					<td><div class="card-body">
+					<td><div class="card-body" style="width:650px;">
 							<div class="card-content">
 								<h6 class="qna_content-item">${qna_board.id}</h6>
 								<h6 class="qna_content-item">
@@ -92,7 +93,7 @@
 			</div>
 			<div>
 				<c:if test="${not empty principal}">
-					<a href="/qna_board/form" class="btn btn-warning">글쓰기</a>
+					<a href="/qna_board/form" class="btn btn-warning" style="margin:30px -50px 0 0">글쓰기</a>
 				</c:if>
 			</div><!-- 글쓰기 -->
 		</div><!-- flex03 -->

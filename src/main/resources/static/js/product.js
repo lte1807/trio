@@ -44,7 +44,7 @@ let index = {
 
 		$.ajax({
 			type: "DELETE",
-			url: "/api/product/" + id,
+			url: `/api/product/${id}`,
 			dataType: "json"
 		}).done(function(resp) {
 			alert("상품 삭제가 완료되었습니다.");
@@ -83,7 +83,6 @@ let index = {
 			userId: $("#userId").val(),
 			productId: $("#productId").val(),
 			content: $("#review-content").val(),
-			/*review_point: $("#review_point").val()*/
 		};
 		$.ajax({
 			type: "POST",

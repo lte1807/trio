@@ -31,7 +31,6 @@ public class Notice_BoardController {
 
 		return "notice_board/notice_list";	
 	
-
 	}
 
 	@GetMapping("/notice_board/{id}/updateForm")

@@ -4,10 +4,11 @@
 <script type="text/javascript" src="/js/summernote-ko-KR.js"></script>
 <script type="text/javascript" src="/js/summernote-lite.js"></script>
 <link rel="stylesheet" href="/css/summernote-lite.css">
+
 <div class="container">
 	<form>
-		<label for="product_category">분류</label>&nbsp;<select
-			name="product_category" id="product_category"
+		<label for="product_category">분류</label>&nbsp;
+		<select name="product_category" id="product_category"
 			onchange="product_category()">
 			<option value="0">BEST</option>
 			<option value="1">주방</option>
@@ -41,7 +42,7 @@
 			class="form-control" placeholder="가격" id="price">
 		</div>
 	</form>
-	<button id="btn-save" class="btn btn-primary">저장</button>
+	<button id="btn-update" class="btn btn-primary">수정</button>
 </div>
 <br />
 <script>

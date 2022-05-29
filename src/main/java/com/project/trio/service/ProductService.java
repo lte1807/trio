@@ -37,7 +37,6 @@ public class ProductService {
 	public Page<Product> 글목록(Pageable pageable) {
 		return productRepository.findAll(pageable);
 	}
-
 		
 	@Transactional(readOnly = true)
 	public Product 글상세보기(int id) {
@@ -47,19 +46,21 @@ public class ProductService {
 	}
 
 	@Transactional
-	public void 글삭제하기(int boardId) {
-		productRepository.deleteById(boardId);
+	public void 글삭제하기(int id) {
+		productRepository.deleteById(id);
 	}
 
 	@Transactional
-	public void 글수정하기(int id, Product requestBoard) {
+	public void 글수정하기(int id, Product requestProduct) {
 		Product product = productRepository.findById(id).orElseThrow(() -> {
 			return new IllegalArgumentException("글 찾기 실패: 아이디를 찾을 수 없습니다.");
 		});
-		product.setTitle(requestBoard.getTitle());
-		product.setContent(requestBoard.getContent());
-		product.setProduct_category(requestBoard.getProduct_category());
-	}
+		product.setTitle(requestProduct.getTitle());
+		product.setContent(requestProduct.getContent());
+		product.setProduct_category(requestProduct.getProduct_category());
+		product.setThumbnail(requestProduct.getThumbnail());
+		product.setPrice(requestProduct.getPrice());
+		}
 	
 	@Transactional
 	public void 리뷰쓰기(ReviewSaveRequestDto reviewSaveRequestDto) {

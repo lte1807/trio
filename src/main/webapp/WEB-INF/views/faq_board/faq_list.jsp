@@ -19,8 +19,8 @@
 <div class="container">
 	<div class="card m-2">
 		<div class="flex02">
-		<h2>고객문의</h2>
 			<table class="menu">
+			<caption><h2>고객문의</h2></caption>
 				<tr>
 					<th class="selected">FAQ</th>
 					<th class="unselected"><a href="/auth/qna_board"
@@ -90,5 +90,4 @@
 <br />
 <%@ include file="../layout/footer.jsp"%>
 
-</body>
 

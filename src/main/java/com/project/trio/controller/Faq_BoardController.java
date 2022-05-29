@@ -95,29 +95,11 @@ public class Faq_BoardController {
 		return "faq_board/category_4";
 	}
 
-	/*
-	 * @GetMapping("/faq_board/{id}") public String findById(@PathVariable int id,
-	 * Model model) { model.addAttribute("faq_board", faq_boardService.글상세보기(id));
-	 * model.addAttribute("faq_boards", faq_boardService.글상세보기(id)); return
-	 * "faq_board/detail"; }
-	 */
-
-
 	@GetMapping({ "/faq_board/form" })
 	public String saveForm() {
 		return "faq_board/saveForm";
 	}
 
-
-
-	/*
-	 * @GetMapping("/auth/faq_board/{id}") public String
-	 * findById_readonly(@PathVariable int id, Model model) {
-	 * model.addAttribute("faq_board", faq_boardService.글상세보기(id));
-	 * model.addAttribute("faq_boards", faq_boardService.글상세보기(id)); return
-	 * "faq_board/detail"; }
-	 */
-	
 
 
 }

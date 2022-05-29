@@ -1,0 +1,331 @@
+caption{caption-side:top !important; }
+
+/* 베스트 아이템 */
+.best-wrap {
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.best-wrap h2 {
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.best-left {
+    float: left;
+    width: 29%;
+    height: 430px;
+    overflow: hidden;
+    position: relative;
+}
+
+.best-slide { 
+    width: 100%;
+    height: 388px;
+}
+
+.best-slide .swiper-slide img {
+    height: 100%;
+}
+
+.best-slide .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
+}
+
+.best-right {
+    float: right;
+    width: 68%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.best-box2 {
+    width: 48%;
+    padding-bottom: 30px;
+}
+
+.best-img {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.best-box2 p {
+    margin: 15px 0 5px;
+    font-size: 14px;
+}
+.best-box2 b {
+    color: #ff3232;
+    font-size: 16px;
+}
+.best-box2 b span {
+    font-size: 12px;
+    color: #666;
+    padding-left: 5px;
+}
+
+.best-box2 img {
+    width: 100%;
+}
+
+/* 장바구니, 주문 */
+.cartwrap{
+    text-align: center;
+    width: 1280px;
+    margin: auto;
+}
+
+.cartwrap p{
+    font-size:  25px;
+    font-weight: bold;
+    margin: 50px auto;
+}
+
+.cart-content {
+    margin: auto;
+    width: 900px; 
+    border-top:solid 1px gray;
+    border-bottom: solid 1px gray;
+    text-align: center;
+    border-collapse : collapse;
+}
+
+.cart-content th{
+    border-collapse : collapse;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    height: 40px;
+}
+
+.cart-content td{
+    padding: 10px 0;
+}
+
+.cart-content tr{
+    border-bottom: solid 1px gray;
+}
+
+.cart-img{
+    height: 70px;
+    cursor: pointer;
+}
+
+.product-name{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.product-count{
+    width: 40px;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    border: solid 1px lightgray;
+}
+
+.product-count td{
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    width: 15px;
+    padding: 0;
+}
+
+.count-btn{
+    border: none;
+    background-color: white;
+    height: 100%;
+}
+
+.count-total{
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: right;
+    font-size: 20px;
+}
+
+.total-txt{
+    font-size: 15px;
+}
+
+.total-txt b{
+    font-size: 20px;
+}
+
+.cart-order-btn{
+    border-radius: 0;
+    background-color: #000;
+    border: 1px solid black;
+    height: 30px;
+    color: white;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.cart-delete-btn{
+    border-radius: 0;
+    background-color: white;
+    border: 1px solid black;
+    height: 30px;
+    width: 80px;
+}
+
+.cart-x-btn{
+    width: 900px;
+    text-align: right;
+    margin: 10px auto;
+}
+
+.cart-x-btn button{
+    border-radius: 0;
+    border: solid 1px gray;
+    padding: 5px 10px;
+    background-color: white;
+    color: #555;
+    margin-left: 5px;
+}
+
+.order{
+    margin: 100px auto;
+    width: 900px;
+    text-align: center;
+}
+
+.order input{
+    border: none;
+    border-radius: 0;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+input, button{
+    cursor: pointer;
+}
+
+/* 주문,배송정보 */
+
+.order-delivery-wrap{
+    margin: auto;
+    width: 900px;
+}
+
+.order-info, .delivery-info, .pay-totalprice, .pay-info{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.order-delivery-wrap input, 
+.order-delivery-wrap select, 
+.order-delivery-wrap button,
+.order-delivery-wrap textarea{
+    border-radius: 0;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    margin: 3px;
+    padding: 3px;
+    background-color: white;
+}
+
+.order-delivery-wrap input:focus, 
+.order-delivery-wrap select:focus, 
+.order-delivery-wrap button:focus,
+.order-delivery-wrap textarea:focus{
+outline: none;
+}
+
+input[type=tel]{
+width: 50px;
+}
+
+.order-info th, .delivery-info th, .pay-totalprice th, .pay-info th{
+    border-right: 1px solid lightgray;
+    font-size: 15px;
+}
+.order-info th, .delivery-info th{
+    width: 200px;
+}
+
+.order-info td, .delivery-info td, .pay-totalprice td, .pay-info td,
+.order-info th, .delivery-info th, .pay-totalprice th, .pay-info th{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+
+.pay-totalprice td{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pay-totalprice th{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.pay-totalprice, .final-pay-price{
+    text-align: center;
+}
+
+.final-pay-price{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.order-info caption, 
+.delivery-info caption, 
+.order-check-title,
+.pay-totalprice caption,
+.pay-info caption
+{
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hr1{
+    width: 900px;
+    margin: 100px auto 0 ;
+}
+
+.red{
+    font-weight: bold;
+    color: red;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.post-num{
+    width: 80px;
+}
+
+.pay-btn{
+    background-color: #000 !important;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+}
+
+#order-check{
+    width: 100%;
+}
+
+.order-address{
+    color:gray;
+    width: 100px;
+    display: inline-block;
+    font-size: 12px;
+}
